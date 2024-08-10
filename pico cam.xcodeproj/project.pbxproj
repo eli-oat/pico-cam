@@ -14,6 +14,7 @@
 		45E751CB2C67DB0900EA4695 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E751CA2C67DB0900EA4695 /* CameraView.swift */; };
 		45E751CD2C67DBE300EA4695 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E751CC2C67DBE300EA4695 /* InfoView.swift */; };
 		45E751D12C68315900EA4695 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 45E751D02C68315900EA4695 /* README.md */; };
+		45E751D32C6831FC00EA4695 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 45E751D22C6831FC00EA4695 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		45E751CA2C67DB0900EA4695 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		45E751CC2C67DBE300EA4695 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		45E751D02C68315900EA4695 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		45E751D22C6831FC00EA4695 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		45E751B02C67D9B700EA4695 = {
 			isa = PBXGroup;
 			children = (
+				45E751D22C6831FC00EA4695 /* .gitignore */,
 				45E751D02C68315900EA4695 /* README.md */,
 				45E751BB2C67D9B700EA4695 /* pico cam */,
 				45E751BA2C67D9B700EA4695 /* Products */,
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E751D32C6831FC00EA4695 /* .gitignore in Resources */,
 				45E751D12C68315900EA4695 /* README.md in Resources */,
 				45E751C42C67D9B800EA4695 /* Preview Assets.xcassets in Resources */,
 				45E751C12C67D9B800EA4695 /* Assets.xcassets in Resources */,
