@@ -11,6 +11,9 @@
 		45E751BF2C67D9B700EA4695 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E751BE2C67D9B700EA4695 /* ContentView.swift */; };
 		45E751C12C67D9B800EA4695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E751C02C67D9B800EA4695 /* Assets.xcassets */; };
 		45E751C42C67D9B800EA4695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E751C32C67D9B800EA4695 /* Preview Assets.xcassets */; };
+		45E751CB2C67DB0900EA4695 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E751CA2C67DB0900EA4695 /* CameraView.swift */; };
+		45E751CD2C67DBE300EA4695 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E751CC2C67DBE300EA4695 /* InfoView.swift */; };
+		45E751D12C68315900EA4695 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 45E751D02C68315900EA4695 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		45E751BE2C67D9B700EA4695 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45E751C02C67D9B800EA4695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E751C32C67D9B800EA4695 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45E751CA2C67DB0900EA4695 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		45E751CC2C67DBE300EA4695 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		45E751D02C68315900EA4695 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 		45E751B02C67D9B700EA4695 = {
 			isa = PBXGroup;
 			children = (
+				45E751D02C68315900EA4695 /* README.md */,
 				45E751BB2C67D9B700EA4695 /* pico cam */,
 				45E751BA2C67D9B700EA4695 /* Products */,
 			);
@@ -51,10 +58,12 @@
 		45E751BB2C67D9B700EA4695 /* pico cam */ = {
 			isa = PBXGroup;
 			children = (
+				45E751CC2C67DBE300EA4695 /* InfoView.swift */,
 				45E751BC2C67D9B700EA4695 /* pico_camApp.swift */,
-				45E751BE2C67D9B700EA4695 /* ContentView.swift */,
 				45E751C02C67D9B800EA4695 /* Assets.xcassets */,
+				45E751BE2C67D9B700EA4695 /* ContentView.swift */,
 				45E751C22C67D9B800EA4695 /* Preview Content */,
+				45E751CA2C67DB0900EA4695 /* CameraView.swift */,
 			);
 			path = "pico cam";
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E751D12C68315900EA4695 /* README.md in Resources */,
 				45E751C42C67D9B800EA4695 /* Preview Assets.xcassets in Resources */,
 				45E751C12C67D9B800EA4695 /* Assets.xcassets in Resources */,
 			);
@@ -137,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E751CD2C67DBE300EA4695 /* InfoView.swift in Sources */,
+				45E751CB2C67DB0900EA4695 /* CameraView.swift in Sources */,
 				45E751BF2C67D9B700EA4695 /* ContentView.swift in Sources */,
 				45E751BD2C67D9B700EA4695 /* pico_camApp.swift in Sources */,
 			);
@@ -275,11 +287,14 @@
 				DEVELOPMENT_TEAM = VQ3T773326;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pico Cam";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This application needs this permission so that it can take and save photos to your device.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +302,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eli.li.pico-cam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +323,14 @@
 				DEVELOPMENT_TEAM = VQ3T773326;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pico Cam";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This application needs this permission so that it can take and save photos to your device.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +338,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eli.li.pico-cam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
