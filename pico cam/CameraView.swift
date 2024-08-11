@@ -91,6 +91,7 @@ struct CameraView: UIViewControllerRepresentable {
     func applyDithering(to ciImage: CIImage) -> UIImage? {
         print("Applying dithering...")
         
+        // FIXME: I *think* that this is the source of the bug that causes saved images being squashed. Rather than resize I should probably be cropping.
         // Resize the image to 160x144
         let targetSize = CGSize(width: 160, height: 144)
         let resizedCIImage = ciImage
