@@ -16,13 +16,14 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             CameraView(processedImage: $processedImage)
+                .scaleEffect(CGSize(width: 0.25, height: 0.25)) // Make it smaller than the actual image preview so that it is hidden.
                 .edgesIgnoringSafeArea(.all)
             
             // Preview dithered image
             if let processedImage = processedImage {
                 Image(uiImage: processedImage)
                     .resizable()
-                    .scaledToFill()
+                    .scaleEffect(CGSize(width: 0.95, height: 0.48))
                     .edgesIgnoringSafeArea(.all)
             } else {
                 // Placeholder while processing
@@ -36,10 +37,16 @@ struct ContentView: View {
                     Button(action: {
                         showInfo.toggle()
                     }) {
-                        Image(systemName: "info.circle")
-                            .font(.largeTitle)
+                        Circle()
+                            .fill(Color.white)
+                            .frame(width: 40, height: 40)
                             .padding()
-                            .foregroundColor(.white)  // Make sure that the button is visible
+                            .overlay(
+                                Image(systemName: "info.circle")
+                                    .font(.largeTitle)
+                                    .padding()
+                                    .foregroundColor(.black)  // Make sure that the button is visible
+                            )
                     }
                     Spacer()
                 }
@@ -60,7 +67,7 @@ struct ContentView: View {
                 }
                 .padding(.bottom, 50)
             }
-            .zIndex(1)  // FIXME: Where is the info button going!?
+            .zIndex(2)  // FIXME: Where is the info button going!?
 
             if isSaving {
                 VStack {
