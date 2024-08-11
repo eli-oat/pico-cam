@@ -7,6 +7,8 @@
 
 import SwiftUI
 import AVFoundation
+import CoreImage
+import CoreImage.CIFilterBuiltins
 
 struct CameraView: UIViewControllerRepresentable {
     @Binding var processedImage: UIImage?
@@ -94,7 +96,28 @@ struct CameraView: UIViewControllerRepresentable {
         // FIXME: I *think* that this is the source of the bug that causes saved images being squashed. Rather than resize I should probably be cropping.
         // Resize the image to 160x144
         let targetSize = CGSize(width: 160, height: 144)
+        
+        /*
+        let imageWidth = ciImage.extent.width
+        let imageHeight = ciImage.extent.height
+        
+        let squareLength = min(imageWidth, imageHeight)
+
+        // Calculate the center point
+        let centerX = imageWidth / 2
+        let centerY = imageHeight / 2
+        
+        let cropRect = CGRect(
+                    x: centerX - squareLength / 2,
+                    y: centerY - squareLength / 2,
+                    width: squareLength,
+                    height: squareLength
+                )
+         */
+        
         let resizedCIImage = ciImage
+            // .cropped(to: CGRect(x: centerX, y: centerY, width: targetSize.width, height: targetSize.height))
+            // .cropped(to: cropRect)
             .transformed(by: CGAffineTransform(scaleX: targetSize.width / ciImage.extent.width, y: targetSize.height / ciImage.extent.height))
             .transformed(by: CGAffineTransform(rotationAngle: -.pi / 2)) // Rotate the image 90 degrees
 
