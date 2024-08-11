@@ -15,15 +15,16 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
+            // FIXME: this means that obscured behind the dithered preview there is a teeny tiny preview that shows unprocessed cameraa output -- is this really necessary?
             CameraView(processedImage: $processedImage)
-                .scaleEffect(CGSize(width: 0.25, height: 0.25)) // Make it smaller than the actual image preview so that it is hidden.
+                .scaleEffect(CGSize(width: 0.25, height: 0.25)) // make it smaller than the actual image preview so that it is hidden.
                 .edgesIgnoringSafeArea(.all)
             
             // Preview dithered image
             if let processedImage = processedImage {
                 Image(uiImage: processedImage)
                     .resizable()
-                    .scaleEffect(CGSize(width: 0.95, height: 0.48))
+                    .aspectRatio(contentMode: .fit)
                     .edgesIgnoringSafeArea(.all)
             } else {
                 // Placeholder while processing
