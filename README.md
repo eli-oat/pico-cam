@@ -10,5 +10,5 @@ A re-implementation of the web version, <https://smallandnearlysilent.com/pico-c
 ## Screenshots of the app
 <img src="./misc/02_the-app.PNG" alt="A screenshot of pico cam's primary UI." width=50% height=50%/>
 
-<img src="./misc/02_the-app.PNG" alt="A screenshot of pico cam's info screen with some text." width=50% height=50%/>
+<img src="./misc/03_the-app.PNG" alt="A screenshot of pico cam's info screen with some text." width=50% height=50%/>
 
