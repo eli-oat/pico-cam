@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4505D4A32C68F0930044F53D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4505D4A22C68F0930044F53D /* LICENSE */; };
 		45E751BD2C67D9B700EA4695 /* pico_camApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E751BC2C67D9B700EA4695 /* pico_camApp.swift */; };
 		45E751BF2C67D9B700EA4695 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E751BE2C67D9B700EA4695 /* ContentView.swift */; };
 		45E751C12C67D9B800EA4695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E751C02C67D9B800EA4695 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4505D4A22C68F0930044F53D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		45E751B92C67D9B700EA4695 /* pico cam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pico cam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E751BC2C67D9B700EA4695 /* pico_camApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pico_camApp.swift; sourceTree = "<group>"; };
 		45E751BE2C67D9B700EA4695 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 		45E751B02C67D9B700EA4695 = {
 			isa = PBXGroup;
 			children = (
+				4505D4A22C68F0930044F53D /* LICENSE */,
 				45E751D22C6831FC00EA4695 /* .gitignore */,
 				45E751D02C68315900EA4695 /* README.md */,
 				45E751BB2C67D9B700EA4695 /* pico cam */,
@@ -141,6 +144,7 @@
 				45E751D12C68315900EA4695 /* README.md in Resources */,
 				45E751C42C67D9B800EA4695 /* Preview Assets.xcassets in Resources */,
 				45E751C12C67D9B800EA4695 /* Assets.xcassets in Resources */,
+				4505D4A32C68F0930044F53D /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
