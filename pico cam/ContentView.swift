@@ -61,7 +61,7 @@ struct ContentView: View {
                         .fill(Color.white)
                         .frame(width: 70, height: 70)
                         .overlay(
-                            Image(systemName: "camera")
+                            Image(systemName: "camera.aperture")
                                 .font(.largeTitle)
                                 .foregroundColor(.black)
                         )
