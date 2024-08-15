@@ -66,7 +66,7 @@ struct ContentView: View {
                                 .foregroundColor(.black)
                         )
                 }
-                .padding(.bottom, 50)
+                .padding(.bottom, 30)
             }
             .zIndex(2)  // FIXME: Where is the info button going!?
 
